@@ -71,8 +71,8 @@ Classifieds_App_Base/
         npm install
 
         Create a .env.local file and add your keys
-        EXPO_PUBLIC_SUPABASE_URL=your_url
-        EXPO_PUBLIC_SUPABASE_ANON_KEY=your_key
+        NEXT_PUBLIC_SUPABASE_URL=your_url
+        NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
         ANTHROPIC_API_KEY=your_api_key
 
         npm run dev
@@ -84,8 +84,9 @@ Classifieds_App_Base/
         npm install
 
         Create a .env.local file and add your keys
-        NEXT_PUBLIC_SUPABASE_URL=your_url
-        NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+        EXPO_PUBLIC_SUPABASE_URL=your_url
+        EXPO_PUBLIC_SUPABASE_ANON_KEY=your_key
+        map_api_key=Your_MAP_API_KEY
 
         Ensure supabase.js has your credentials
 
