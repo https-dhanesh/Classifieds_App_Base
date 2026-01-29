@@ -87,6 +87,20 @@ cron.schedule('0 8 * * *', async () => {
   }
 });
 
+app.get('/search', async (req, res) => {
+  const { q } = req.query;
+  
+  if (!q) return res.json([]); 
+
+  const { data, error } = await supabase
+    .from('listings')
+    .select('*')
+    .or(`title.ilike.%${q}%,description.ilike.%${q}%`);
+  
+  if (error) return res.status(500).json(error);
+  res.json(data);
+});
+
 app.get('/my-listings/:ownerId', async (req, res) => {
   const { ownerId } = req.params;
   const { data, error } = await supabase
