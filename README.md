@@ -54,11 +54,11 @@ Classifieds_App_Base/
 ## 4. Setup & Installation
 
     Prerequisites : 
+    
         Node.js (v18+ recommended)
         npm or yarn
         Expo Go app on your phone (for mobile testing)
-
-    Supabase Account (for Database & Auth)
+        Supabase Account (for Database & Auth)
 
     1. Clone the Repository
 
